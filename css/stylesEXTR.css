@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.slider {
+margin: 0 0 0 0;
+width: 100%;
+overflow: hidden;
+background-color: #fff; 
+}
+.slider video {
+width: 100%;
+height: auto;
+background: #fff;
+}
+.slider li {
+width: 100%;
+list-style: none;
+background: #fff;
+}
+
+.slider ul li video {
+width: 100%;
+}
+
+.medio {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px 0 0 0;
+    margin: 0;
+}
+.linea{
+margin: 0;
+padding: 0;
+text-align: center;
+padding: 0px 0;
+background: #ffffff;
+}
+.linea dir {
+border-radius: 5%;
+display: inline-block;
+width: 40%;
+height: 5px;
+background: #00000050;
+}
+.medio p {
+    font-family: 'Arial';
+    font-weight: bold;
+    display: inline-block;
+    color: #000;
+    font-size: 40px;
+    padding: 40px 80px 40px 80px;
+}
+.medio2 {
+    color: #000000;
+    background: #ffffff;
+    padding: 10px 0 60px 0;
+    text-align: center;
+    width: 100%;
+    font-family: 'Arial';
+}
+.medio2 h2 {
+    font-family: 'Arial';
+    color: #000000;
+    margin: 40px 0 0 0;
+    font-size: 80px;
+    font-weight: bold;
+}
+.medio2 h1 {
+    font-family: 'Arial';
+    color: #fa8801;
+    margin: 40px 0 0 0;
+    font-size: 50px;
+}
+.medio2 dir {
+    display: inline-block;
+}
+.medio2 div {
+    font-size: 34px;
+    float: left;
+    padding: 10px 40px 10px 40px;
+    width: 600px;
+    text-align: center;
+}
+.medio2 div p {
+    text-align: justify;
+}
+.buttonn {
+    color: #fff;
+    background: #000000;
+    border-color: #000000;
+    border-radius: 15px;
+    margin: 40px 0 0 0;
+    padding: 40px 80px 40px 80px;
+    font-size: 40px;
+    font-family: 'Alata', sans-serif;
+    font-weight: bold;
+    position: relative;
+    top: 80px;
+}
+.buttonn:hover {
+    transition: 0.5s;
+    background: #cccccc;
+    border-color: #cccccc;
+    color: #000000;
+}
+.sig {
+    background: #fff;
+    color: #000;
+    text-align: center;
+    font-family: 'Alata', sans-serif;
+    font-weight: bold;
+    padding: 20px 40px 40px 20px;
+}
+.sig .cfc1 {
+    display: inline-block;
+    font-size: 30px;
+    width: 700px;
+    margin: 80px 0 0 0;
+}
+.sig .cfc2 {
+    display: inline-block;
+    font-size: 50px;
+    width: 600px;
+    margin: 60px 0 0 0; 
+}
+
+/*--------------------- CSS Deslisado bajo video inicio ------------------------------ */
+
+.deslisado {
+text-align: center;
+width: 100%;
+height: 850px;
+}
+.deslisado .img1 {
+display: inline-block;
+width: 700px;
+height: 700px;
+border-radius: 100px;
+filter: hue-rotate(50deg);
+box-shadow: 0px 20px 0 #000000;
+}
+/*--------------------- CSS Deslisado bajo video final ------------------------------ */
+
+/*--------------------- OKITO inicio-----------------------------*/
+.okito {
+float: right;
+}
+.okito img {
+position: fixed;
+top: 200px;
+right: 0;
+padding: 0;
+width: 400px;
+height: 400px;
+}
+/*--------------------- OKITO Final-----------------------------*/
