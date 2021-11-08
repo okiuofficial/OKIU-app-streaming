@@ -71,32 +71,16 @@ background: #00000050;
     font-size: 80px;
     font-weight: bold;
 }
-.medio2 h1 {
-    font-family: 'Arial';
-    color: #fa8801;
-    margin: 40px 0 20px 0;
-    font-size: 50px;
-}
-.medio2 dir {
-    display: inline-block;
-}
 .medio2 div {
-    font-size: 34px;
-    float: left;
-    padding: 10px 40px 10px 40px;
-    width: 600px;
-    text-align: center;
-}
-.medio2 div p {
-    text-align: justify;
+    height: 200px;
 }
 .buttonn {
     color: #fff;
     background: #000000;
     border-color: #000000;
-    border-radius: 15px;
+    border-radius: 10px;
     margin: 40px 0 0 0;
-    padding: 40px 80px 40px 80px;
+    padding: 40px 30% 40px 30%;
     font-size: 40px;
     font-family: 'Alata', sans-serif;
     font-weight: bold;
@@ -109,36 +93,115 @@ background: #00000050;
     border-color: #cccccc;
     color: #000000;
 }
-.sig {
-    background: #fff;
-    color: #000;
-    text-align: center;
-    font-family: 'Alata', sans-serif;
-    font-weight: bold;
-    padding: 20px 40px 40px 20px;
-}
-.sig .cfc1 {
-    display: inline-block;
-    font-size: 30px;
-    width: 700px;
-    margin: 80px 0 0 0;
-}
 
+/*------------------------------- apploki ---------------------------*/
+.apploki {
+    width: 100%;
+    height: 600px;
+}
+.apploki div {
+    background: #efefef;
+    margin: 0 100px;
+    padding: 60px 0 60px 0;
+    border-radius: 10px;
+    height: 400px;
+}
+.apploki p {
+    display: inline-block;
+    font-size: 50px;
+    position: absolute;
+    font-weight: bold;
+    margin: 0 0 20px 0;
+    left: 24%;
+}
+.apploki img {
+    width: 200px;
+    height: 200px;
+    margin: 80px 0 0 0;
+    position: absolute;
+    left: 40%;
+}
+.apploki .but1 {
+    font-size: 40px;
+    position: absolute;
+    left: 300px;
+    margin: 320px 0 0 0;
+}
+.apploki .but2 {
+    position: absolute;
+    left: 50%;
+    font-size: 40px;
+    background-color: #000000;
+    color: #ffffff;
+    border-radius: 10px;
+    margin: 300px 0 0 0;
+    padding: 20px 40px;
+    font-weight: bold;
+
+}
 /*--------------------- OKITO inicio-----------------------------*/
 .okito {
 float: right;
 }
 .okito img {
 position: fixed;
-top: 200px;
+top: 500px;
 right: 0;
 padding: 0;
-width: 400px;
-height: 400px;
+width: 200px;
+height: 200px;
 }
 
-
-/*--------------------- Construcción -----------------------------*/
-.cons img {
+/*------------------contenedor carga--------------------*/
+#contenedor_carga {
+    text-align: center;
+    background-color: #ffffff;
     width: 100%;
+    height: 100%;
+    position: fixed;
+    -webkit-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+    z-index: 10000;
+}
+#carga {
+    border: 15px a #c0c4d5;
+    border-top-color: #fe9f00;
+    border-top-style: groove;
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+
+    -webkit-animation: girar 0.8s linear infinite;
+    -o-animation: girar 0.8s linear infinite;
+    animation: girar 0.8s linear infinite;
+
+}
+#contenedor_carga p {
+    position: absolute;
+    top: 52%;
+    left: 0;
+    right: 0;
+    color: #000;
+    font-size: 40px;
+    font-weight: bold;
+    padding: 20px 40px;
+    border-radius: 0px 100px 100px 100px;
+}
+
+@keyframes girar {
+    from {
+        transform: rotate(0deg);
+
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
