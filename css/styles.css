@@ -10,31 +10,42 @@ ul{
 a{
 	text-decoration:none;
 }
+
+.degradd{
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    top: 455px;
+    background: rgb(255,255,255);
+background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 20%, rgba(255,255,255,1) 80%);
+}
+
 .container{
 	text-align: center;
 	width:100%;
-	height: 280px;
 	background-color:#ffffff;
 	display:flex;
 	justify-content: center;
 	align-items: center;
+	padding: 20px 0;
 }
 .box{
-	width: 208px;;
-	border-radius: 20px;
+	width: 290px;
+	height: 290px;
+	background-color:#efefef;
+	border-radius: 10px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-between;
 	box-sizing: border-box;
 	margin: 20px 15px;
-    background: #e2e2e2;
 }
 .model{
-	height: 100px;
+	height: 150px;
 	max-height: 100%;
 	max-width: 100%;
-	padding: 0px 0 20px 0px;
+	padding: 0px 0 0 0px;
 }
 .details{
 	display: flex;
@@ -45,23 +56,21 @@ a{
 .details p{
 	font-family: calibri;
 	font-weight: bold;
-	color:#777777;
+	color:#6a6a74;
 	text-align: center;
 	margin-top: 20px;
 	width: 270px;
-	font-size: 20px;
-	position: relative;
-	bottom: 40px;
+	font-size: 15px;
+	padding: 0 0 20px 0;
 }
 .marvel{
     padding: 20px 0 0 0;
-	color: #777777;
+	color:#777777;
 	font-weight: bold;
 	letter-spacing: 2px;
 	font-family: bebas kai;
 	font-size: 35px;
     font-family: "arial";
-    margin: 0;
 }
 .logo{
 	height: 20px;
@@ -69,26 +78,21 @@ a{
 .box:hover{
 	background-color: #000000;
 	transform-style: preserve-3d;
-	transform: scale(1.05);
+	transform: scale(1.02);
 	transition: all ease 0.3s;
-	box-shadow: 0px 0px 20px #ffffff;
-    transition: 0.5s;
-}
-.box:hover .model {
-    filter: grayscale(0);
+	box-shadow: 0px 0px 20px #000000;
     transition: 0.5s;
 }
 .box:hover .marvel{
 	color:#fba101;
 	transition: all ease 0.5s;
 }
-.box:hover .details p {
-    color: #ffffff;
-}
+
 .box:hover img {
-    filter: drop-shadow(0px 0px 10px rgb(255, 255, 255));
-    transition-duration: 0.5s;
+    filter: contrast(0) brightness(5);
 }
+/*--responsive for mobile phone--*/
+
 
 .redondo {
     width: 290;
@@ -104,10 +108,10 @@ a{
     font-size: 40px;
     font-weight: bold;
     color: #ffffff;
-    margin: 15px 0 0 0;
+    margin: 0;
     position: absolute;
-    top: 50px;
-    left: 65px;
+    top: 121.5px;
+    left: 102.773px;
   }
   .box:hover .redondo {
     width: 100%;
@@ -213,7 +217,7 @@ a{
     padding: 0 5px;
 }
 .lSSlideOuter .lSPager.lSpg > li a {
-    background-color: #00000020;
+    background-color: #00000090;
     border-radius: 30px;
     display: inline-block;
     height: 10px;
@@ -278,6 +282,36 @@ a{
 }
 /* End of Gallery*/
 
+/* slider actions */
+.lSAction > a {
+    width: 100px;
+    display: block;
+    top: 40%;
+    height: 100px;
+    background-image: url("../images/controls.png");
+    cursor: pointer;
+    position: absolute;
+    z-index: 99;
+    margin-top: -16px;
+    opacity: 0.2;
+    -webkit-transition: opacity 0.35s linear 0s;
+    transition: opacity 0.35s linear 0s;
+}
+.lSAction > a:hover {
+    opacity: 1;
+}
+.lSAction > .lSPrev {
+    background-size: 200px;
+    background-position: 0 0;
+    left: 10px;
+    filter: brightness(0);
+}
+.lSAction > .lSNext {
+    background-size: 200px;
+    background-position: -100px 0;
+    right: 10px;
+    filter: brightness(0);
+}
 .lSAction > a.disabled {
     pointer-events: none;
 }
